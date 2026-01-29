@@ -1,0 +1,241 @@
+CODING CHALLENGE #1
+index.js
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./styles.css";
+
+function App() {
+  return (
+    <div className="card">
+      <Avatar />
+      <div className="data">
+        <Intro />
+        {/* Should contain one Skill component
+        for each web dev skill that you have,
+        customized with props */}
+        <SkillList name="Javascript" />
+      </div>
+    </div>
+  );
+}
+
+function Avatar() {
+  return (
+    <img
+      className="avatar"
+      src="https://images.pexels.com/photos/41008/cowboy-ronald-reagan-cowboy-hat-hat-41008.jpeg"
+      alt="Guy in cowboy hat"
+    />
+  );
+}
+function Intro() {
+  return (
+    <div>
+      <h1>John Doe</h1>
+      <p>
+        A versatile and detail-oriented Full-Stack Developer with a deep
+        understanding of the entire web development lifecycle, from designing
+        responsive, intuitive user interfaces to architecting robust server-side
+        logic and database schemas. Proficient in bridging the gap between
+        front-end aesthetics and back-end functionality, they excel at building
+        scalable applications that provide seamless user experiences. With a
+        mastery of modern frameworks and a problem-solving mindset, a Full-Stack
+        Developer navigates complex technical challenges across the stack to
+        deliver comprehensive, high-performance digital solutions.
+      </p>
+    </div>
+  );
+}
+function SkillList(props) {
+  return (
+    <div className="skill-list">
+      <Skill skill="React" emoji="💪" color="blue" />
+      <Skill skill="HTML+CSS" emoji="💪" color="orange" />
+      <Skill skill="JavaScript" emoji="💪" color="yellow" />
+      <Skill skill="Svelte" emoji="👶" color="orangered" />
+    </div>
+  );
+}
+function Skill(props) {
+  return (
+    <div className="skill" style={{ backgroundColor: props.color }}>
+      <span>{props.skill}</span>
+      <span>{props.emoji}</span>
+    </div>
+  );
+}
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
+
+styles.CSS
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Mono", sans-serif;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  margin-bottom: 12px;
+}
+
+.card {
+  width: 450px;
+  margin: 40px;
+  border: 4px solid #222;
+}
+
+.card::after {
+  content: "";
+  display: block;
+}
+
+.avatar {
+  width: 100%;
+  display: block;
+}
+
+.data {
+  padding: 32px;
+  padding-top: 24px;
+}
+
+.skill-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.skill {
+  padding: 2px 12px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+CODING CHALLENGE #2
+index.js
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./styles.css";
+const skills = [
+  {
+    skill: "HTML+CSS",
+    level: "advanced",
+    color: "#2662EA",
+  },
+  {
+    skill: "JavaScript",
+    level: "advanced",
+    color: "#EFD81D",
+  },
+  {
+    skill: "Web Design",
+    level: "advanced",
+    color: "#C3DCAF",
+  },
+  {
+    skill: "Git and GitHub",
+    level: "intermediate",
+    color: "#E84F33",
+  },
+  {
+    skill: "React",
+    level: "advanced",
+    color: "#60DAFB",
+  },
+  {
+    skill: "Svelte",
+    level: "beginner",
+    color: "#FF3B00",
+  },
+];
+function App() {
+  return (
+    <div className="card">
+      <Avatar />
+      <div className="data">
+        <Intro />
+        {/* Should contain one Skill component
+        for each web dev skill that you have,
+        customized with props */}
+        <SkillList name="Javascript" />
+      </div>
+    </div>
+  );
+}
+
+function Avatar() {
+  return (
+    <img
+      className="avatar"
+      src="https://images.pexels.com/photos/41008/cowboy-ronald-reagan-cowboy-hat-hat-41008.jpeg"
+      alt="Guy in cowboy hat"
+    />
+  );
+}
+function Intro() {
+  return (
+    <div>
+      <h1>John Doe</h1>
+      <p>
+        A versatile and detail-oriented Full-Stack Developer with a deep
+        understanding of the entire web development lifecycle, from designing
+        responsive, intuitive user interfaces to architecting robust server-side
+        logic and database schemas. Proficient in bridging the gap between
+        front-end aesthetics and back-end functionality, they excel at building
+        scalable applications that provide seamless user experiences. With a
+        mastery of modern frameworks and a problem-solving mindset, a Full-Stack
+        Developer navigates complex technical challenges across the stack to
+        deliver comprehensive, high-performance digital solutions.
+      </p>
+    </div>
+  );
+}
+function SkillList() {
+  return (
+    <div className="skill-list">
+      {skills.map((skill) => (
+        <Skill skill={skill.skill} color={skill.color} level={skill.level} />
+      ))}
+    </div>
+  );
+}
+
+function Skill({ skill, color, level }) {
+  return (
+    <div className="skill" style={{ backgroundColor: color }}>
+      <span>{skill}</span>
+      <span>
+        {level === "beginner" && "👶"}
+        {level === "intermediate" && "👍"}
+        {level === "advanced" && "💪"}
+      </span>
+    </div>
+  );
+}
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
