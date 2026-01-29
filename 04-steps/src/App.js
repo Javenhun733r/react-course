@@ -5,6 +5,14 @@ const messages = [
 	'Invest your new income 🤑',
 ];
 export default function App() {
+	return (
+		<div>
+			<Steps />
+			<Steps />
+		</div>
+	);
+}
+function Steps() {
 	const [step, setStep] = useState(1);
 	const [isOpen, setIsOpen] = useState(true);
 	function handlePrevious() {
@@ -14,7 +22,7 @@ export default function App() {
 		if (step < 3) setStep(curStep => curStep + 1);
 	}
 	return (
-		<>
+		<div>
 			<button
 				className='close'
 				onClick={() => {
@@ -49,6 +57,6 @@ export default function App() {
 					</div>
 				</div>
 			)}
-		</>
+		</div>
 	);
 }
