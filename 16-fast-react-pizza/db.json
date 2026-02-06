@@ -1,0 +1,622 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "name": "Margherita",
+      "unitPrice": 12,
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "basil"
+      ],
+      "soldOut": false,
+      "imageUrl": "/img/pizzas/margherita.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Pepperoni",
+      "unitPrice": 14,
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "pepperoni"
+      ],
+      "soldOut": false,
+      "imageUrl": "/img/pizzas/pepperoni.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Hawaiian",
+      "unitPrice": 15,
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "ham",
+        "pineapple"
+      ],
+      "soldOut": false,
+      "imageUrl": "/img/pizzas/hawaiian.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Veggie",
+      "unitPrice": 13,
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "bell pepper",
+        "onion",
+        "mushroom"
+      ],
+      "soldOut": false,
+      "imageUrl": "/img/pizzas/veggie.jpg"
+    },
+    {
+      "id": 5,
+      "name": "BBQ Chicken",
+      "unitPrice": 16,
+      "ingredients": [
+        "bbq sauce",
+        "mozzarella",
+        "chicken",
+        "red onion"
+      ],
+      "soldOut": true,
+      "imageUrl": "/img/pizzas/bbq-chicken.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Four Cheese",
+      "unitPrice": 15,
+      "ingredients": [
+        "mozzarella",
+        "gorgonzola",
+        "parmesan",
+        "goat cheese"
+      ],
+      "soldOut": false,
+      "imageUrl": "/img/pizzas/four-cheese.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Meat Lovers",
+      "unitPrice": 18,
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "pepperoni",
+        "sausage",
+        "bacon"
+      ],
+      "soldOut": false,
+      "imageUrl": "/img/pizzas/meat-lovers.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Spicy Inferno",
+      "unitPrice": 17,
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "chili",
+        "spicy salami"
+      ],
+      "soldOut": false,
+      "imageUrl": "/img/pizzas/spicy-inferno.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Mushroom Lovers",
+      "unitPrice": 14,
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "mushroom",
+        "thyme"
+      ],
+      "soldOut": false,
+      "imageUrl": "/img/pizzas/mushroom.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Prosciutto",
+      "unitPrice": 17,
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "prosciutto",
+        "arugula"
+      ],
+      "soldOut": false,
+      "imageUrl": "/img/pizzas/prosciutto.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Seafood",
+      "unitPrice": 19,
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "shrimp",
+        "calamari"
+      ],
+      "soldOut": true,
+      "imageUrl": "/img/pizzas/seafood.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Pesto Chicken",
+      "unitPrice": 16,
+      "ingredients": [
+        "pesto",
+        "mozzarella",
+        "chicken"
+      ],
+      "soldOut": false,
+      "imageUrl": "/img/pizzas/pesto-chicken.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Truffle",
+      "unitPrice": 20,
+      "ingredients": [
+        "truffle oil",
+        "mozzarella",
+        "mushroom"
+      ],
+      "soldOut": false,
+      "imageUrl": "/img/pizzas/truffle.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Buffalo Chicken",
+      "unitPrice": 17,
+      "ingredients": [
+        "buffalo sauce",
+        "mozzarella",
+        "chicken"
+      ],
+      "soldOut": false,
+      "imageUrl": "/img/pizzas/buffalo.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Carbonara",
+      "unitPrice": 18,
+      "ingredients": [
+        "cream",
+        "mozzarella",
+        "bacon",
+        "egg"
+      ],
+      "soldOut": false,
+      "imageUrl": "/img/pizzas/carbonara.jpg"
+    }
+  ],
+  "orders": [
+    {
+      "id": "IIDSAT",
+      "status": "preparing",
+      "priority": true,
+      "priorityPrice": 5,
+      "orderPrice": 41,
+      "estimatedDelivery": "2026-02-06T18:30:00.000Z",
+      "cart": [
+        {
+          "id": 1,
+          "name": "Pepperoni",
+          "quantity": 2,
+          "totalPrice": 28
+        },
+        {
+          "id": 4,
+          "name": "Veggie",
+          "quantity": 1,
+          "totalPrice": 13
+        }
+      ]
+    },
+    {
+      "id": "AOS932",
+      "status": "on the way",
+      "priority": false,
+      "priorityPrice": 0,
+      "orderPrice": 30,
+      "estimatedDelivery": "2026-02-06T18:10:00.000Z",
+      "cart": [
+        {
+          "id": 3,
+          "name": "Hawaiian",
+          "quantity": 2,
+          "totalPrice": 30
+        }
+      ]
+    },
+    {
+      "id": "ZXQ112",
+      "status": "preparing",
+      "priority": false,
+      "priorityPrice": 0,
+      "orderPrice": 18,
+      "estimatedDelivery": "2026-02-06T18:45:00.000Z",
+      "cart": [
+        {
+          "id": 7,
+          "name": "Meat Lovers",
+          "quantity": 1,
+          "totalPrice": 18
+        }
+      ]
+    },
+    {
+      "id": "PLK883",
+      "status": "received",
+      "priority": true,
+      "priorityPrice": 5,
+      "orderPrice": 34,
+      "estimatedDelivery": "2026-02-06T18:55:00.000Z",
+      "cart": [
+        {
+          "id": 10,
+          "name": "Prosciutto",
+          "quantity": 2,
+          "totalPrice": 34
+        }
+      ]
+    },
+    {
+      "id": "MNB554",
+      "status": "on the way",
+      "priority": false,
+      "priorityPrice": 0,
+      "orderPrice": 29,
+      "estimatedDelivery": "2026-02-06T18:20:00.000Z",
+      "cart": [
+        {
+          "id": 6,
+          "name": "Four Cheese",
+          "quantity": 1,
+          "totalPrice": 15
+        },
+        {
+          "id": 9,
+          "name": "Mushroom Lovers",
+          "quantity": 1,
+          "totalPrice": 14
+        }
+      ]
+    },
+    {
+      "id": "QWE778",
+      "status": "preparing",
+      "priority": true,
+      "priorityPrice": 5,
+      "orderPrice": 36,
+      "estimatedDelivery": "2026-02-06T19:05:00.000Z",
+      "cart": [
+        {
+          "id": 12,
+          "name": "Pesto Chicken",
+          "quantity": 2,
+          "totalPrice": 32
+        },
+        {
+          "id": 1,
+          "name": "Margherita",
+          "quantity": 1,
+          "totalPrice": 12
+        }
+      ]
+    },
+    {
+      "id": "AOS93255",
+      "status": "on the way",
+      "priority": false,
+      "priorityPrice": 0,
+      "orderPrice": 30,
+      "estimatedDelivery": "2026-02-06T18:10:00.000Z",
+      "cart": [
+        {
+          "id": 3,
+          "name": "Hawaiian",
+          "quantity": 2,
+          "totalPrice": 30
+        }
+      ]
+    },
+    {
+      "id": "0fac",
+      "customer": "123",
+      "phone": "12312321",
+      "address": "12312312",
+      "cart": [
+        {
+          "pizzaId": 1,
+          "name": "Margherita",
+          "quantity": 3,
+          "unitPrice": 12,
+          "totalPrice": 36
+        }
+      ],
+      "priority": false
+    },
+    {
+      "id": "c6c2",
+      "customer": "123",
+      "phone": "12312312312",
+      "address": "12312312312",
+      "cart": [
+        {
+          "pizzaId": 1,
+          "name": "Margherita",
+          "quantity": 3,
+          "unitPrice": 12,
+          "totalPrice": 36
+        }
+      ],
+      "priority": false
+    },
+    {
+      "id": "90f1",
+      "customer": "1321",
+      "phone": "3213123123",
+      "address": "12312321",
+      "cart": [
+        {
+          "pizzaId": 1,
+          "name": "Margherita",
+          "quantity": 3,
+          "unitPrice": 12,
+          "totalPrice": 36
+        }
+      ],
+      "priority": false
+    },
+    {
+      "id": "a32d",
+      "customer": "1231",
+      "phone": "12312312",
+      "address": "32132131",
+      "cart": [
+        {
+          "pizzaId": 2,
+          "name": "Pepperoni",
+          "quantity": 1,
+          "unitPrice": 14,
+          "totalPrice": 14
+        },
+        {
+          "pizzaId": 1,
+          "name": "Margherita",
+          "quantity": 1,
+          "unitPrice": 12,
+          "totalPrice": 12
+        },
+        {
+          "pizzaId": 3,
+          "name": "Hawaiian",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        }
+      ],
+      "priority": false,
+      "status": "preparing",
+      "orderPrice": 41,
+      "priorityPrice": 0,
+      "estimatedDelivery": "2026-02-06T12:32:49.806Z"
+    },
+    {
+      "id": "99f3",
+      "customer": "1231",
+      "phone": "132321312",
+      "address": "321321312",
+      "cart": [
+        {
+          "pizzaId": 2,
+          "name": "Pepperoni",
+          "quantity": 1,
+          "unitPrice": 14,
+          "totalPrice": 14
+        },
+        {
+          "pizzaId": 1,
+          "name": "Margherita",
+          "quantity": 1,
+          "unitPrice": 12,
+          "totalPrice": 12
+        },
+        {
+          "pizzaId": 3,
+          "name": "Hawaiian",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        }
+      ],
+      "priority": false,
+      "status": "preparing",
+      "orderPrice": 41,
+      "priorityPrice": 0,
+      "estimatedDelivery": "2026-02-06T12:36:07.002Z"
+    },
+    {
+      "id": "8a47",
+      "customer": "Johan",
+      "phone": "12312312312",
+      "address": "12312312",
+      "priority": true,
+      "cart": [
+        {
+          "pizzaId": 8,
+          "name": "Spicy Inferno",
+          "quantity": 1,
+          "unitPrice": 17,
+          "totalPrice": 17
+        },
+        {
+          "pizzaId": 7,
+          "name": "Meat Lovers",
+          "quantity": 1,
+          "unitPrice": 18,
+          "totalPrice": 18
+        },
+        {
+          "pizzaId": 6,
+          "name": "Four Cheese",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        }
+      ],
+      "status": "preparing",
+      "orderPrice": 50,
+      "priorityPrice": 10,
+      "estimatedDelivery": "2026-02-06T12:42:47.204Z"
+    },
+    {
+      "id": "176a",
+      "customer": "321312",
+      "phone": "3213213123",
+      "address": "12312321",
+      "cart": [
+        {
+          "pizzaId": 2,
+          "name": "Pepperoni",
+          "quantity": 1,
+          "unitPrice": 14,
+          "totalPrice": 14
+        },
+        {
+          "pizzaId": 3,
+          "name": "Hawaiian",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        }
+      ],
+      "priority": false,
+      "status": "preparing",
+      "orderPrice": 29,
+      "priorityPrice": 0,
+      "estimatedDelivery": "2026-02-06T12:45:13.597Z"
+    },
+    {
+      "id": "6aac",
+      "customer": "1321",
+      "phone": "3213123",
+      "address": "1231232131",
+      "priority": false,
+      "cart": [
+        {
+          "pizzaId": 3,
+          "name": "Hawaiian",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        },
+        {
+          "pizzaId": 4,
+          "name": "Veggie",
+          "quantity": 1,
+          "unitPrice": 13,
+          "totalPrice": 13
+        }
+      ],
+      "status": "preparing",
+      "orderPrice": 28,
+      "priorityPrice": 0,
+      "estimatedDelivery": "2026-02-06T12:49:05.160Z"
+    },
+    {
+      "id": "5130",
+      "customer": "312321",
+      "phone": "132312321312312",
+      "address": "asdasdas",
+      "priority": true,
+      "cart": [
+        {
+          "pizzaId": 2,
+          "name": "Pepperoni",
+          "quantity": 1,
+          "unitPrice": 14,
+          "totalPrice": 14
+        },
+        {
+          "pizzaId": 3,
+          "name": "Hawaiian",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        }
+      ],
+      "status": "preparing",
+      "orderPrice": 29,
+      "priorityPrice": 6,
+      "estimatedDelivery": "2026-02-06T12:49:37.796Z"
+    },
+    {
+      "id": "d311",
+      "customer": "321312",
+      "phone": "312312",
+      "address": "312312321",
+      "priority": true,
+      "cart": [
+        {
+          "pizzaId": 1,
+          "name": "Margherita",
+          "quantity": 1,
+          "unitPrice": 12,
+          "totalPrice": 12
+        },
+        {
+          "pizzaId": 2,
+          "name": "Pepperoni",
+          "quantity": 1,
+          "unitPrice": 14,
+          "totalPrice": 14
+        },
+        {
+          "pizzaId": 3,
+          "name": "Hawaiian",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        }
+      ],
+      "position": "50.6332, 26.2625",
+      "status": "preparing",
+      "orderPrice": 41,
+      "priorityPrice": 8,
+      "estimatedDelivery": "2026-02-06T13:23:18.008Z"
+    },
+    {
+      "id": "4239",
+      "customer": "321312",
+      "phone": "321321321",
+      "address": "321321321312321",
+      "cart": [
+        {
+          "pizzaId": 3,
+          "name": "Hawaiian",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        },
+        {
+          "pizzaId": 4,
+          "name": "Veggie",
+          "quantity": 1,
+          "unitPrice": 13,
+          "totalPrice": 13
+        }
+      ],
+      "position": "",
+      "priority": true,
+      "status": "preparing",
+      "orderPrice": 28,
+      "priorityPrice": 0,
+      "estimatedDelivery": "2026-02-06T13:36:13.194Z"
+    }
+  ]
+}
